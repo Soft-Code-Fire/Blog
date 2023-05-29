@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layout/Layout.astro";
+import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title='Blog'>
@@ -17,6 +17,19 @@ import Layout from "../../layout/Layout.astro";
                         </a>
 
                         <span class="text-sm text-gray-500 dark:text-gray-300">4/5/2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+                <div class="lg:flex">
+                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAAD+/v76+vphYWH39/fv7+/MzMzc3NzT09PJyclYWFh1dXVoaGg6Ojrh4eEqKiqpqamenp6Ojo4vLy/o6OhiYmI1NTVBQUGDg4NtbW20tLQICAgRERElJSW7u7tMTEwbGxumpqZ+fn6Li4uwsLAXFxdTU1OWlpZERETBwcFh0i/OAAAKUUlEQVR4nOVdiXbaOhCVDXbYoQRCwh4IKeX/P/DZGnmVvGhkYw3vtucUMDJzGWk2jShjlsJ1w7+6Y8Ih2sM6AkirOYYOPRxBUgwx/EKGdAjyP6iBNOCi5ighvDq/lyeI8YPdAGkqOMOGRWkHOD0Q0R4HD5/0x9BiiAm66FBEmQsyNoZh5xshN+HSWlH6IKQLFF49qHTpxCRYUKGHzED5IBIUXYw1FOuPBEGGsoeUqiTIOhAhL4iz94S8BFZSMgQpKMNIPgL0StZ7DdkJKNBERpQffDYMA18CBA1Wof3TkxmZCTHSdpYuniOJoMtoEZFI7ExtjOUMjbNr2wkaWdGn4uWza2SXBRFyHKguCzIzlKGTT/vNRATsthsVfv+HLgsCsb0JCE02HF6dIB166C6Lps1FW19YWaGjuEBEqeCP29IgkJnFwAVdhHwErsuCjpXBBvl0GFJSBgb2LyfzarHd/JhZqmy/AkOYyEhhCRrxI6A/k5I2jdM2BmaGRtBlsoxeniABI+Oa9gs+kSC2DcR2HURARr2Ny9EaUFEFHf2FwLTT2WYHP0qu4cyFZdHkwzkVX8Ses7GJIPt0NiXlKixHiyjuHMe5FVx7iRZ4dxMwXPSUlzrg18LnXZwQS9WHvYICGfMOnKHj5S/QoVdhKu5A0HlXjKNBsUIVnhMho0TbzH0pyoX9ihl+ZYfQaUMo1+HaSTBPDaIyQ1llojxJMZwkg4gxLLk6AG5j+GcQDyJkRysknXJmC7bg/06fJVZzqOqyGILuHkHszTF8nmjNoHKunTmvc+YRKVT5tBFobhQ8fEsekkENazEDM8Mfg7HZPEEwCcjOzxru+pRefMKq7spu2Q7KuozLuiyqCyVu1oAKs/p8J4FxTfXqQH9Aa2vxVEQ3f7QlNEZbdSDvmAtkILw5SllUy8A3flaNXGZVyJjvFKbCLaK9Lgtfzgrf4SUf8YFotFhY/eFsDmk6/i9/7UfrPmbitZiGKqfkUleJuN2leEirAT6Yle+sWfG+c8anEqgtDTGk3dbkudo1/JFS4XLgCv7x1G4zQwP3fpReP2plUbhChyt+manVDFRkTfJuhV4WZWDo3ZbrQH3OY6a48pkKxqtg2szVIkpSJXHprfomhvzarZLMihTl9ry/herNvdXmJgT1YvNH79OVE6FkQ5E1sYraZZjOmsQHrS9jJwPZzGbks2wPO4cbcAhLh2KmDaeOhJIsynJ+rAc+b8sigkOoQs2mX/f7+7UvZmphFuW2beiNkQ4+Azn9QH+z91E6Fp0/rpviLMr6crgPsWe4DRPKeXJWyzlz56efyXQ8nk5+bgNOdnhdrNU3sK6RJI97osJAzuvmEfjAySq9Ar/7u/Cqr2ZoPUGRNd1B1OmOsctRNjPOdlB8C7sJsiuoyQvl9C4ue+wV/Hg8UDvBsAuioHbhFtFj3qSAX4gfZXuG7dhy2Vc98Gn+LLP+VqvvDMUVQTWKwvYN1pKfEJr+Gfher+d581tarSWr8TnQzs8ga1rASC+yoL+X7Hx8nOPF2KCwKOi63iRrCsdtBY07vzb/5H01MDGHEceu96J060BhZnTYn+GJ2Jc5DFMXI7px8HpuSFIkdAny7cJDkN3yOglkGN+xX4fKxizz5nB7uENox79hh97e6UfhGkcqSYRlGdtPWLPlWVS70C5V7iL7yIdlJ2UI6OCLU19hdzvYi4qgHR+Cb9iKZ7AI0ykFRANJZxS4jb3JsSwT6JdJQEXRLAQNZQqjbu4lUTVG7kWZplj6BHPbhbAMs53Bs5wLvMp61hLR6Fil/hcksqYoc78p3N2/8KW/yXPRtqi3F5UWEzkQV2r2IYeItwthhyJTFgX/kQ5jxIZiQSpcJaPBmTUMRdgu3MfFFwVDT1qaHnwtV4yU6DmKrAOt81ZjJ/vzkTwnlxnrpC0mCkjtS10ID8kdijg1Q9rT24tKpDSq92OGC8OfMp1QzfiXes9QZTlTtVUdGY2OVaKmN1R8Mwdj9rn5N/hVqYufxcgY2GoJTbeuMaNV24U/6QimNwTfJ2tLhK8aWVQn1VRVV14Y1Hxfgjm5ftzHC8Ev0wgNgkKh41zzk1zWSTlcJEK5PcFxGFSv75la4iqWLjbZImuulUV1VvD/p1xL8znzc6W2WcrMxKtJbCjWkburgr+cCQq8HbIEt16igMRciEVc0pYZo6tjKEVd6qMsv3Ewi/03D76ItD0EQ/xd45M6IhgnvjmsU9Xu/eQWTtDTwWFfYRSaMfgiFb7U+KxOJqmbN5IR+tHiu494qNPbhWZzOQ9D76xLE57E1hK41GQpIJbXOV6eEL4s3M1b3ueKoPaev4Ud8CBU+ZIugBk9p3Z6Yb0Ol2cpqhCJyVPbMmtDpHjylrW8OiGheh/I+u7Bm7GpcFvgeiicYDBJ++mXIBj/YIrKzL1gqncJYSpEqUVW4U7h5GbOfh/EdjO5Xaj3W2CuOgRkWfF2oQTQSjYK2DqHg/PrbRUttLptmU8A6DDeLpQAyvVzrx0O+733ruhq623EFLYFLmRZcuIb46pwcZOQ4a+3VOm8KG7oCFF8CFmTsgvvrjCxn/tgls6CS6r1Bm2ZGqlwqxAhSVnic5PXlR/u2wTm9arcGBXtfl1vKAKiJAbynk/le0ayvEvhWP5myjcxGjyhaBi8xjGl+NbVzbDgxNPnSUSFe8iOzkYVgsbnTRuAUWdqXG90yxuaeXVilXrhQyzaIJVYKLv2ROt0E9mDYXOxGF5h/S45ly8SiF144aiMQKtPKNYVElm3Z5ECxcikyVIJb3cKEC3EAazZ0O5+FjGMTqEgBMtKKZr1cUOTCZA7XVgG7y1qywiMa2iC1D9WE+XMdVLhMinj4wio0zZJrQwkPm77eXxMA3wkT8ezpFxzAr936H9Iw4J3bkVdztBOuGKq4U7bxKPuDgK7euNMUuGEGYJgekfDL2o5LMHvKA4SyoFOhVNWAjUP0or/0Sc49WNzWQX8rrCreIjCulrKHLZhIvVWV/PIVLjBgnhZ26iM2deJu/j6a3dSKGkhg4YL/l6vLrzEMbieW3uUtkS2n2AwB7X/ygbnyloQhLVw2zpH/YvG0QChH1hCAatBMnh9/b24AulYC+SPFhFy2Zi2KvuPVaaB6RujxA+bXRNZggwpKyUzilYGEX6vH5S8ekxCxmNj8eL0GKEpahB00SCI+3ktUh4bG5JQYYgTFDlFu/hSkKogY2RI1IEMz1rYzs/497FsJ2iWR5oft3kCDI882U7PdJLaz8/gOIL4aqzniFchjZjS7PA2AYZmRsZ6gq7xmSfLCVJw1QBs2NvZqTVtYCpxoD4aGkS209Ghh0yU2+uyaOGuyNzzf9Bl0bQkrYHSgkKAiD/Dg4rHxoKMw8aDigaRU42QhUHFv1TUx2He4m858E0IRIAziGQyOwNlPIufqUeyXxWGAlrPjxnmyfZr0HCWWs+ugW1o6zkabthYP0WrfVLJcSL76Qkp0VsaBBIfw4K/7QRNy6n2B13WCxijgQP0dgMlJqmCP/oAPRlgl5N60H/OXE0i7cazAQAAAABJRU5ErkJggg==" alt="A8">
+
+                    <div class="flex flex-col justify-between py-6 lg:mx-6">
+                        <a href="/blog/posts/a8" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                            A8 Stack
+                        </a>
+
+                        <span class="text-sm text-gray-500 dark:text-gray-300">5/29/2023</span>
                     </div>
                 </div>
             </div>
